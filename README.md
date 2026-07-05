@@ -64,3 +64,36 @@ User engagement (`Votes`) captures nearly the entirety of the model's variance. 
 Install the required dependencies:
 ```bash
 pip install pandas numpy scikit-learn
+
+# Comprehensive Guide: Running the Restaurant Predictor in Google Colab
+
+This guide provides a step-by-step walkthrough to upload your dataset, configure the environment, and execute the machine learning pipeline using Google Colab.
+
+---
+
+### Step 1: Open Google Colab and Create a Notebook
+1. Navigate to [colab.research.google.com](https://colab.research.google.com/) in your web browser.
+2. Sign in with your Google account.
+3. In the pop-up modal, click **New Notebook** at the bottom right. A fresh workspace will initialize.
+
+---
+
+### Step 2: Upload Your Dataset
+Google Colab operates on dynamic cloud instances, meaning files must be uploaded to your active session before execution:
+1. Locate the left-hand sidebar menu and click the **Folder icon** ($\square$) to open the Files panel.
+2. Click the **Upload to session storage** button (the icon showing a page with an upward arrow).
+3. Select your local `Dataset .csv` file and click open.
+4. Click **OK** on the runtime reminder popup notice.
+
+*Note: Session storage resets when your browser tab is closed for an extended period. You will simply need to re-upload the CSV using this folder panel when returning to the notebook.*
+
+---
+
+### Step 3: Code Implementation and Execution
+Colab uses interactive code segments called **Cells**. Click the **`+ Code`** button in the upper left corner to add cells as needed.
+
+#### Cell 1: Environment Optimization
+Paste the following installation command into your first cell and press **Shift + Enter** (or click the circular **Play** button on the left of the cell) to run it:
+
+```python
+!pip install --upgrade pandas numpy scikit-learn
